@@ -7,4 +7,4 @@
 
 nome = 'André'
 
-print('é' in nome)
+print('b' in nome)
