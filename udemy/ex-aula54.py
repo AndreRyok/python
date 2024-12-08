@@ -18,13 +18,18 @@ Faça um programa que pergunte a hora ao usuário e, baseando-se no horário des
 """
 
 hora = input('Que horas são agora? ')
-hInt = int(hora)
-if (hInt >= 0) and (hInt <= 11):
-    print('Bom dia!')
-elif (hInt >= 12) and (hInt <= 17):
-    print('Boa tarde!')
-else:
-    print('Boa noite')
+try:
+    hInt = int(hora)
+    if (hInt >= 0) and (hInt <= 11):
+        print('Bom dia!')
+    elif (hInt >= 12) and (hInt <= 17):
+        print('Boa tarde!')
+    elif (hInt >= 18) and (hInt <= 23):
+        print('Boa noite')
+    else:
+        print('Você não digitou um horário válido')
+except:
+    print('Você não digitou um horário válido')
 
 
 """
